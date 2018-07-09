@@ -2,6 +2,6 @@
 
 int main()
 {
-    std::cout << "Dzien dobry";
+    std::cout << "Dzien dobry" << std::endl;
     return 0;
 }
