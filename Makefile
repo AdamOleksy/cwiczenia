@@ -1,3 +1,4 @@
+CXX = g++
 CXXFLAGS = -g -Wall -Wfatal -errors
 
 ALL = main
