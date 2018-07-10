@@ -1,14 +1,13 @@
-CXXFLAGS = -g -Wall -Wfatal-errors -std=c++14
+CXX=g++
+STD=-std=c++14
+CXXFLAGS=-Wall -Wextra -Werror -Wpedantic -o
+SOURCES= *.cpp
 
-ALL = main
+hello: $(SOURCES)
+    $(CXX) $(SOURCES) $(STD) $(CXXFLAGS) $@ -g
 
-all: $(ALL)
-
-main: main.cpp Makefile
-	$(CXX) $(CXXFLAGS) -o $@ $@.cpp
+helloRelaese: $(SOURCES)
+    $(CXX) $(SOURCES) $(STD) $(CXXFLAGS) $@ -O3
 
 clean:
-	$(RM) $(ALL) *.o
-
-test: all
-   bash test
+    rm *.o
