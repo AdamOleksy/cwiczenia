@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -g -Wall -Wfatal -errors
+CXXFLAGS = -g
 
 ALL = main
 
